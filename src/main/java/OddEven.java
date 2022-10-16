@@ -1,0 +1,17 @@
+public class OddEven {
+//    Task 1. В классе OddEven создать алгоритм oddEven(),
+//    который принимает на вход целое число, возвращает “Odd”,
+//    если число нечетное, и “Even”, если число четное.
+
+
+    public String oddEven(int toCheckOddEvenNumber) {
+        if (toCheckOddEvenNumber % 2 == 0) {
+
+            return "Even";
+        }
+
+        return "Odd";
+
+    }
+
+}

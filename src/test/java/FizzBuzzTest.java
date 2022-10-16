@@ -22,7 +22,6 @@ public class FizzBuzzTest {
 
         //Assert
         Assert.assertEquals(actualResult, expectedResult);
-
     }
 
     //testStartequalsEnd
@@ -39,7 +38,6 @@ public class FizzBuzzTest {
 
         //Assert
         Assert.assertEquals(actualResult,expectedResult);
-
     }
 
     //test < End
@@ -58,7 +56,6 @@ public class FizzBuzzTest {
 
         //Assert
         Assert.assertEquals(actualResult,expectedResult);
-
     }
 
 
@@ -79,7 +76,5 @@ public class FizzBuzzTest {
 
         //Assert
         Assert.assertEquals(actualResult, expectedResult);
-
     }
-
 }
