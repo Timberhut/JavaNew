@@ -77,9 +77,10 @@ public class StringMethods {
 
                     return "String is contain some letter or symbol";
 
-                } else
+                } else {
 
                     return str.replace("0", "").trim(); //удаление внешних пробелов и 0-лей в строке
+                }
             }
 
             return "This is a valid string";
@@ -132,8 +133,9 @@ public class StringMethods {
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == 'a' || str.charAt(i) == 'а') { // а - (Eng and rus character)
                 ++countA;
-            } else
+            } else {
                 ++countB;
+            }
         }
 
         return countA + ", " + countB;
@@ -252,9 +254,10 @@ public class StringMethods {
 
             return true;
 
-        } else
+        } else {
 
             return false;
+        }
 
     }
 
@@ -281,13 +284,15 @@ public class StringMethods {
 
                 return str.substring(indexOfLastWord);
 
-            } else
+            } else {
 
                 return "String contain 1 word or only spaces";
+            }
 
-        } else
+        } else {
 
             return "String not contain any words";
+        }
 
     }
 
@@ -341,7 +346,7 @@ public class StringMethods {
         if (!str.isEmpty()) { // валидация не пустой строки
             str = str.toLowerCase().trim();
             str = str.substring(0, 1).toUpperCase() + str.substring(1);
-            str = str.replaceAll("( +)"," "); // замена лишних пробелов на 1 пробел
+            str = str.replaceAll("( +)", " "); // замена лишних пробелов на 1 пробел
 
 
             String[] parts = str.split(" "); // перевод слов в эл.массива с разделением по пробелу
@@ -353,13 +358,17 @@ public class StringMethods {
 
                 return "Имя: " + parts[0] + "\nОтчество: " + parts[1] + "\nФамилия: " + parts[2];
 
-            } else
+            } else {
 
                 return "Incorrect format name";
+            }
 
-        } else
+        } else {
 
             return"String is empty";
+
+        }
+
     }
 
     public String repeatStringNtimes(String str, int repeat) {
