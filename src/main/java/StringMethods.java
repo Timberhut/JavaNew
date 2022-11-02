@@ -399,12 +399,12 @@ public class StringMethods {
 
             return true;
 
-        } else
+        } else {
 
             return false;
 
+        }
     }
-
 }
 
 
